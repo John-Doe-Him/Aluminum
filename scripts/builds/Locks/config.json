@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
+  "customizations": {"codespaces": {}, "vscode": {}},
+  "additionalProperties": {"NetworkingEnabled": true, "LayoutsThread": true},
+  "init": false,
+  "mounts": [],
+  "containerEnv": {"VST": ".2", "Instance_Thread": "__INIT__"},
+  "hostRequirements": {"cpus": 1, "gpu": "optional"},
+  "onCreateCommand": "-b",
+  "userEnvProbe": "interactiveShell",
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "notify"
+    }
+  },
+  "forwardPorts": [],
+  "otherPortsAttributes": {
+    "onAutoForward": "ignore"
+  },
+  "name": "Aluminum",
+  "privileged": true,
+  "initializeCommand": ".webbin",
+  "waitFor": "postCreateCommand",
+  "overrideFeatureInstallOrder": [],
+  "secrets": {},
+  "remoteUser": "devContainer",
+  "updateRemoteUserUID": true
+}
