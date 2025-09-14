@@ -52,15 +52,12 @@ def set_aluminum_browser_icon(app):
     # Log the successful icon setting
     print("Aluminum browser icon has been successfully set.")
 
-# Usage example (assuming this is part of the main application file)
 if __name__ == '__main__':
     # Create the application instance
     aluminum_app = QApplication(sys.argv)
     
     # Set the application icon
     set_aluminum_browser_icon(aluminum_app)
-    
-    # ... (rest of the application initialization code)
     
     # Start the application event loop
     sys.exit(aluminum_app.exec_())
