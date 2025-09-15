@@ -1,0 +1,27 @@
+[package]
+name = "aluminum"
+version = "2.50"
+edition = "2025"
+description = "Experimental browser engine"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+html_parser = "0.7"
+cssparser = "0.29"
+csscolorparser = "0.6"
+scraper = "0.18"
+lightningcss = "1.0.0-alpha.53"
+tl = "0.7"
+lol_html = "1.2"
+
+# For layout/DOM stuff
+taffy = "0.3"
+boa_engine = "0.17"
+
+# Logging & error handling
+log = "0.4"
+env_logger = "0.11"
+anyhow = "1.0"
+
+[dev-dependencies]
+pretty_assertions = "1.4"
