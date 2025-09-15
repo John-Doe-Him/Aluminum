@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "aluminum"
+version = "0.1.0"
+description = "An experimental browser engine"
+authors = [
+    { name = "John-Doe-HIm", email = "None" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "ruff"]
+
+[tool.maturin]
+bindings = "pyo3"
+strip = true
